@@ -45,7 +45,7 @@ $sql = "INSERT INTO `tb_order`(
                         `tel_num`,
                         `address`,
                         `remark`
-                        )VALUE (?,?,?,?,?,?,?,?,?,?,?)";//this is a word
+                        )VALUE (?,?,?,?,?,?,?,?,?,?,?)";
 $stmt = $con->prepare($sql);
 $stmt->bind_param("siiiiiiisss",
     $array['name'],
